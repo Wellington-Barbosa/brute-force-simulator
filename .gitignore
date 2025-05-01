@@ -1,0 +1,29 @@
+# Ambiente virtual
+venv/
+.venv/
+
+# Arquivos de ambiente
+.env
+*.env
+
+# __pycache__ e arquivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de log
+*.log
+
+# Diretórios e arquivos do VSCode / PyCharm
+.vscode/
+.idea/
+
+# Wordlist não deve ser versionada
+wordlist/
+
+# Arquivos temporários de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos do Jupyter (caso use)
+.ipynb_checkpoints/
