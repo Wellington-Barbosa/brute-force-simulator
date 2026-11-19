@@ -2,14 +2,16 @@
 venv/
 .venv/
 
-# Arquivos de ambiente
+# Arquivos de ambiente (o modelo .env.example é versionado)
 .env
 *.env
+!.env.example
 
 # __pycache__ e arquivos compilados
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
 
 # Arquivos de log
 *.log
@@ -18,8 +20,9 @@ __pycache__/
 .vscode/
 .idea/
 
-# Wordlist não deve ser versionada
-wordlist/
+# Listas de senhas próprias não são versionadas; a de exemplo que acompanha o projeto, sim
+wordlist/*
+!wordlist/wordlist.example.txt
 
 # Arquivos temporários de sistema
 .DS_Store
